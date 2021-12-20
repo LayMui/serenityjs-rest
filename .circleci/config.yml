@@ -50,14 +50,22 @@ jobs:
           path: target
 
       # host latest report in AWS S3
-      - aws-s3/copy:
-          arguments: '--recursive --acl public-read-write'
-          from: target/site/serenity
-          to: 's3://serenitybdd'
-      - persist_to_workspace:
-          root: .
-          paths:
-            - package.json
+
+      - run:
+          name: Copy test results to S3
+          command: |
+            aws s3 cp target/site/serenity s3://serenitybdd --recursive --acl public-read-write
+          # setting always so this S3 copy is run whether tests failed or succeeded
+          when: always
+
+      # - aws-s3/copy:
+      #     arguments: '--recursive --acl public-read-write'
+      #     from: target/site/serenity
+      #     to: 's3://serenitybdd'
+      # - persist_to_workspace:
+      #     root: .
+      #     paths:
+      #       - package.json
 
 orbs:
   aws-s3: circleci/aws-s3@3.0.0
