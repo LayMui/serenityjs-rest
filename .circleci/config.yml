@@ -51,6 +51,8 @@ jobs:
 
       # host latest report in AWS S3
 
+      - aws-cli/setup
+
       - run:
           name: Copy test results to S3
           command: |
