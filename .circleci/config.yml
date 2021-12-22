@@ -51,6 +51,8 @@ jobs:
 
       # host latest report in AWS S3
 
+      - aws-cli/install
+
       - aws-cli/setup
 
       - run:
