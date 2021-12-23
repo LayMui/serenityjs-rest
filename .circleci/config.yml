@@ -61,6 +61,9 @@ jobs:
             aws s3 cp target/site/serenity s3://serenitybdd --recursive --acl public-read-write
           # setting always so this S3 copy is run whether tests failed or succeeded
           when: always
+          environment:
+            # please update this to use the right region for you
+            AWS_REGION: ap-southeast-1
 
       # - aws-s3/copy:
       #     arguments: '--recursive --acl public-read-write'
