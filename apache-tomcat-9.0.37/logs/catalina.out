@@ -2254,3 +2254,100 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 04-Jan-2022 11:38:02.605 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 04-Jan-2022 11:38:02.613 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
 04-Jan-2022 11:38:05.334 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37/webapps/webapp.war] has finished in [13,148] ms
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jan-2022 12:49:11.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.37
+04-Jan-2022 12:49:11.829 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 30 2020 20:09:49 UTC
+04-Jan-2022 12:49:11.829 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.37.0
+04-Jan-2022 12:49:11.829 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+04-Jan-2022 12:49:11.829 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            11.3.1
+04-Jan-2022 12:49:11.830 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+04-Jan-2022 12:49:11.830 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/Cellar/openjdk@11/11.0.12/libexec/openjdk.jdk/Contents/Home
+04-Jan-2022 12:49:11.830 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.12+0
+04-Jan-2022 12:49:11.830 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Homebrew
+04-Jan-2022 12:49:11.830 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37
+04-Jan-2022 12:49:11.830 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37
+04-Jan-2022 12:49:11.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Jan-2022 12:49:11.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Jan-2022 12:49:11.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jan-2022 12:49:11.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37/conf/logging.properties
+04-Jan-2022 12:49:11.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Jan-2022 12:49:11.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Jan-2022 12:49:11.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Jan-2022 12:49:11.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Jan-2022 12:49:11.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Jan-2022 12:49:11.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37
+04-Jan-2022 12:49:11.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37
+04-Jan-2022 12:49:11.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37/temp
+04-Jan-2022 12:49:11.860 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/a845751yara.com/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+04-Jan-2022 12:49:12.378 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Jan-2022 12:49:12.450 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1057)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:690)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:712)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:455)
+		at java.base/sun.nio.ch.Net.bind(Net.java:447)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1141)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1154)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:581)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1039)
+		... 13 more
+04-Jan-2022 12:49:12.452 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1113] milliseconds
+04-Jan-2022 12:49:12.538 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Jan-2022 12:49:12.538 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.37]
+04-Jan-2022 12:49:12.569 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37/webapps/webapp.war]
+04-Jan-2022 12:49:12.608 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [/Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37/webapps/webapp] was found with a last modified time that did not match the associated WAR. It will be deleted.
+04-Jan-2022 12:49:17.159 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jan-2022 12:49:17.990 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/webapp]
+04-Jan-2022 12:49:18.139 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37/webapps/webapp.war]
+04-Jan-2022 12:49:19.950 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37/webapps/webapp.war] has finished in [7,380] ms
+04-Jan-2022 12:49:19.952 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37/webapps/docs]
+04-Jan-2022 12:49:20.011 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37/webapps/docs] has finished in [59] ms
+04-Jan-2022 12:49:20.012 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37/webapps/manager]
+04-Jan-2022 12:49:20.096 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37/webapps/manager] has finished in [84] ms
+04-Jan-2022 12:49:20.097 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37/webapps/examples]
+04-Jan-2022 12:49:22.942 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37/webapps/examples] has finished in [2,846] ms
+04-Jan-2022 12:49:22.943 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37/webapps/ROOT]
+04-Jan-2022 12:49:23.013 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37/webapps/ROOT] has finished in [69] ms
+04-Jan-2022 12:49:23.013 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37/webapps/host-manager]
+04-Jan-2022 12:49:23.072 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jan-2022 12:49:23.156 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37/webapps/host-manager] has finished in [142] ms
+04-Jan-2022 12:49:23.169 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [10717] milliseconds
+04-Jan-2022 12:49:23.210 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:825)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:771)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+04-Jan-2022 12:49:23.211 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Jan-2022 12:49:23.211 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Jan-2022 12:49:23.288 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Jan-2022 12:49:23.289 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+04-Jan-2022 12:49:25.642 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/a845751yara.com/poc/serenityjs-rest/apache-tomcat-9.0.37/webapps/webapp.war] has finished in [7,500] ms

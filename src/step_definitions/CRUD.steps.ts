@@ -38,16 +38,12 @@ Then(
   async (actor: Actor, author: string, message: string) => {
     const iAuthor = await Note.of('Author').answeredBy(actor)
     await actor.attemptsTo(
-      Log.the('AUTHOR: ' + iAuthor),
-
       Ensure.that(LastResponse.status(), equals(201)),
 
       Ensure.that(
         Property.of(LastResponse.body<MessageDto>()).author.answeredBy(actor),
         equals(iAuthor)
       ),
-
-      
 
       Ensure.that(
         Property.of(LastResponse.body<MessageDto>()).author.answeredBy(actor),
