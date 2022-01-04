@@ -22,6 +22,7 @@ When('{pronoun} wants to create a new message with author {string} and message {
               return author; // Actual value
             })
           ).as('Author'),
+
           ToPerform.createMessage(author, message)
         //Send.a(PostRequest.to('/taqelah/messages/').with({ author: author, message: message })),
     ));
@@ -35,7 +36,7 @@ Then('{pronoun} is able to create the new message author {string} and message {s
     Ensure.that(LastResponse.status(), equals(201)),
     
     Ensure.that(
-        Property.of(LastResponse.body<MessageDto>()).author.answeredBy(actor), equals(author)
+        Property.of(LastResponse.body<MessageDto>()).author.answeredBy(actor), equals(iAuthor)
     ),
 
     Ensure.that(
