@@ -89,3 +89,18 @@ Fix:
 
 
   Log.the(Note.of('Author')),
+
+
+  Issue:
+  ```
+  test:report] Aug 16, 2023 1:11:14 PM com.google.inject.internal.MessageProcessor visit
+[test:report] INFO: An exception was caught and reported. Message: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @1e643faf
+[test:report] java.lang.IllegalStateException: Unable to load cache item
+[test:report]   at com.google.inject.internal.cglib.core.internal.$LoadingCache.createEntry(LoadingCache.java:79)
+[test:report]   at com.google.inject.internal.cglib.core.internal.$LoadingCache.get(LoadingCache.java:34)
+[test:report]   at com.google.inject.internal.cglib.core.$AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:119)
+[test:report]   at com.google.inject.internal.cglib.core.$AbstractClassGenerator.create(AbstractClassGenerator.java:294)
+[test:report]   at com.google.inject.internal.cglib.reflect.$FastClass$Generator.create(FastClass.java:65)
+
+```
+
