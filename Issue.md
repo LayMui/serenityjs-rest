@@ -102,5 +102,14 @@ Fix:
 [test:report]   at com.google.inject.internal.cglib.core.$AbstractClassGenerator.create(AbstractClassGenerator.java:294)
 [test:report]   at com.google.inject.internal.cglib.reflect.$FastClass$Generator.create(FastClass.java:65)
 
+
 ```
 
+Info
+```
+java --version
+openjdk 17.0.6 2023-01-17
+OpenJDK Runtime Environment (build 17.0.6+0-17.0.6b802.4-9586694)
+OpenJDK 64-Bit Server VM (build 17.0.6+0-17.0.6b802.4-9586694, mixed mode)
+a845751yara.com@Lays-MBP-2 serenityjs-rest % 
+```
